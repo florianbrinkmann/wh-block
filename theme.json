@@ -86,5 +86,22 @@
 				}
 			}
 		}
-	}
+	},
+	"templateParts": [
+		{
+			"name": "header-h1",
+			"title": "Header (h1)",
+			"area": "header"
+		},
+		{
+			"name": "header-p",
+			"title": "Header (p)",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "Footer",
+			"area": "footer"
+		}
+	]
 }
