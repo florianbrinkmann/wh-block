@@ -1,16 +1,17 @@
-<!-- wp:template-part {"slug":"header-p"} /-->
+<!-- wp:template-part {"slug":"header-p","align":"center"} /-->
 
-<!-- wp:query {"queryId":32,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"tagName":"main","layout":{"inherit":true}} -->
-<main class="wp-block-query"><!-- wp:group {"tagName":"header","layout":{"inherit":true}} -->
-<header class="wp-block-group"><!-- wp:heading {"level":1} -->
-<h1>Suchergebnisse</h1>
-<!-- /wp:heading --></header>
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+<main class="wp-block-group"><!-- wp:query {"queryId":1,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[],"format":[]}} -->
+<div class="wp-block-query"><!-- wp:group {"tagName":"header","layout":{"type":"constrained"}} -->
+<header class="wp-block-group"><!-- wp:query-title {"type":"search"} /--></header>
 <!-- /wp:group -->
 
 <!-- wp:post-template -->
 <!-- wp:post-title {"isLink":true} /-->
 
 <!-- wp:post-date {"isLink":true} /-->
+
+<!-- wp:post-featured-image /-->
 
 <!-- wp:post-excerpt {"moreText":"Weiterlesen"} /-->
 <!-- /wp:post-template -->
@@ -24,12 +25,13 @@
 <!-- /wp:query-pagination -->
 
 <!-- wp:query-no-results -->
-<!-- wp:paragraph {"placeholder":"Füge Text oder Blöcke hinzu, die angezeigt werden, wenn die Abfrage keine Ergebnisse ausgibt."} -->
-<p>Es wurden keine passenden Inhalte gefunden.</p>
+<!-- wp:paragraph {"placeholder":"Füge Text oder Blöcke hinzu, die angezeigt werden, wenn eine Abfrage keine Ergebnisse ausgibt."} -->
+<p>Leider nichts gefunden.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:search {"label":"Suchen","buttonText":"Suchen"} /-->
-<!-- /wp:query-no-results --></main>
-<!-- /wp:query -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></main>
+<!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer"} /-->

@@ -1,20 +1,19 @@
 <!-- wp:template-part {"slug":"header-p"} /-->
 
-<!-- wp:group {"tagName":"main","layout":{"inherit":false}} -->
-<main class="wp-block-group"><!-- wp:group {"tagName":"article","layout":{"inherit":false}} -->
-<article class="wp-block-group"><!-- wp:group {"tagName":"header","layout":{"inherit":true}} -->
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+<main class="wp-block-group"><!-- wp:group {"tagName":"article","layout":{"type":"constrained"}} -->
+<article class="wp-block-group"><!-- wp:group {"tagName":"header","layout":{"type":"constrained"}} -->
 <header class="wp-block-group"><!-- wp:post-title {"level":1} /-->
 
 <!-- wp:post-featured-image /--></header>
 <!-- /wp:group -->
 
-<!-- wp:post-content {"layout":{"inherit":true}} /--></article>
-<!-- /wp:group --></main>
+<!-- wp:post-content /--></article>
 <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"inherit":true}} -->
-<div class="wp-block-group"><!-- wp:comments-query-loop -->
-<div class="wp-block-comments-query-loop"><!-- wp:comments-title /-->
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:comments -->
+<div class="wp-block-comments"><!-- wp:comments-title /-->
 
 <!-- wp:comment-template -->
 <!-- wp:columns -->
@@ -23,17 +22,17 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:comment-author-name /-->
+<div class="wp-block-column"><!-- wp:comment-author-name {"fontSize":"small"} /-->
 
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"0px","bottom":"0px"}}},"layout":{"type":"flex"}} -->
-<div class="wp-block-group" style="margin-top:0px;margin-bottom:0px"><!-- wp:comment-date /-->
+<div class="wp-block-group" style="margin-top:0px;margin-bottom:0px"><!-- wp:comment-date {"fontSize":"small"} /-->
 
-<!-- wp:comment-edit-link /--></div>
+<!-- wp:comment-edit-link {"fontSize":"small"} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:comment-content /-->
 
-<!-- wp:comment-reply-link /--></div>
+<!-- wp:comment-reply-link {"fontSize":"small"} /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 <!-- /wp:comment-template -->
@@ -47,7 +46,8 @@
 <!-- /wp:comments-pagination -->
 
 <!-- wp:post-comments-form /--></div>
-<!-- /wp:comments-query-loop --></div>
+<!-- /wp:comments --></div>
+<!-- /wp:group --></main>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer"} /-->

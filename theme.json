@@ -1,6 +1,6 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.0/theme.json",
-	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+	"version": 3,
 	"settings": {
 		"layout": {
 			"contentSize": "30rem",
@@ -39,8 +39,7 @@
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"src": [
-								"file:./assets/fonts/ibm-plex-serif-v15-latin-regular.woff2",
-								"file:./assets/fonts/ibm-plex-serif-v15-latin-regular.woff"
+								"file:./assets/fonts/ibm-plex-serif-v15-latin-regular.woff2"
 							]
 						},
 						{
@@ -49,8 +48,7 @@
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"src": [
-								"file:./assets/fonts/ibm-plex-serif-v15-latin-700.woff2",
-								"file:./assets/fonts/ibm-plex-serif-v15-latin-700.woff"
+								"file:./assets/fonts/ibm-plex-serif-v15-latin-700.woff2"
 							]
 						},
 						{
@@ -59,8 +57,7 @@
 							"fontStyle": "italic",
 							"fontStretch": "normal",
 							"src": [
-								"file:./assets/fonts/ibm-plex-serif-v15-latin-italic.woff2",
-								"file:./assets/fonts/ibm-plex-serif-v15-latin-italic.woff"
+								"file:./assets/fonts/ibm-plex-serif-v15-latin-italic.woff2"
 							]
 						}
 					]
@@ -77,10 +74,10 @@
 	},
 	"styles": {
 		"color": {
-			"text": "var(--wp--preset--color--dark)"
+			"text": "var:preset|color|dark"
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--ibm-plex-serif)"
+			"fontFamily": "var:preset|font-family|ibm-plex-serif"
 		},
 		"elements": {
 			"link": {
