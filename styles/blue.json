@@ -1,5 +1,6 @@
 {
 	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+	"title": "Blue variation",
 	"version": 3,
 	"settings": {
 		"color": {
